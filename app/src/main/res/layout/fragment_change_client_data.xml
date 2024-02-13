@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PackageClients.ChangeClientDataFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:text="Zmień dane klienta"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/NumberLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:drawablePadding="3dp"
+            android:padding="5dp"
+            android:text="Numer telefonu:"
+            android:textColor="@color/gray"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/phone" />
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NumberLabel"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/layout_bg"
+            android:hint="Number telefonu"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:maxLines="1"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/clientLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phoneNumber"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:drawablePadding="3dp"
+            android:padding="5dp"
+            android:text="Dane osobowe:"
+            android:textColor="@color/gray"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/person" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clientLabel"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/layout_bg"
+            android:hint="Imię"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:maxLines="1"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/layout_bg"
+            android:hint="Nazwisko"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:maxLines="1"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/adressLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/surname"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:drawablePadding="3dp"
+            android:padding="5dp"
+            android:text="Adres:"
+            android:textColor="@color/gray"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/home"/>
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adressLabel"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/layout_bg"
+            android:hint="Miasto"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:maxLines="1"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/layout_bg"
+            android:hint="Ulica i adres"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:maxLines="1"
+            android:inputType="text"
+            />
+
+        <Button
+            android:id="@+id/changeClientData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_marginTop="15dp"
+            android:text="Zmień"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@android:color/holo_red_dark" />
+    </RelativeLayout>
+
+
+</FrameLayout>

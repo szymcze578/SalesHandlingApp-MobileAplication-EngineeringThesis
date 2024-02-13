@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:elevation="3dp"
+    android:background="@drawable/layout_bg"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/type">
+
+            <TextView
+                android:id="@+id/typeLabel"
+                android:layout_width="90dp"
+                android:drawableLeft="@drawable/category"
+                android:drawablePadding="3dp"
+                android:layout_height="wrap_content"
+                android:text="Typ: "
+                android:layout_gravity="center"
+                android:textColor="@color/gray"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/typeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/typeLabel"
+                android:textColor="@color/gray"
+                android:text="ZAMÓWIENIE"
+                android:textSize="17sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/messageLayout"
+            android:layout_below="@+id/type">
+
+            <TextView
+                android:id="@+id/messageLabel"
+                android:layout_width="90dp"
+                android:drawableStart="@drawable/sms_message"
+                android:drawablePadding="3dp"
+                android:layout_height="wrap_content"
+                android:text="Treść:"
+                android:textColor="@color/gray"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/messageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/messageLabel"
+                android:text="100 jajek, 2 kurczaki, 3 słoiki dżemu"
+                android:textColor="@color/gray"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/numberLayout"
+            android:layout_below="@+id/messageLayout">
+
+            <TextView
+                android:id="@+id/numberLabel"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="3dp"
+                android:text="Numer:"
+                android:textColor="@color/gray"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/numberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/numberLabel"
+                android:text="609 842 104"
+                android:textColor="@color/gray"
+                android:textSize="17sp"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:elevation="5dp"
+    android:background="@drawable/layout_bg"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/type">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/egg"
+                android:padding="13dp"
+                android:id="@+id/itemImage"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemImage"
+                android:id="@+id/itemLabel"
+                android:text="Jajka"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/priceLayout"
+            android:layout_toEndOf="@+id/type">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/priceLabel"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:text="Cena za \nszt/kg:"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/price"
+                android:layout_below="@+id/priceLabel"
+                android:textSize="13sp"
+                android:text="45"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:id="@+id/ammountLayout"
+            android:gravity="center"
+            android:layout_toEndOf="@+id/priceLayout">
+
+            <TextView
+                android:id="@+id/ammountLabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Liczba:"
+                android:textColor="@color/gray"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ammount"
+                android:layout_below="@+id/ammountLabel"
+                android:text="45"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/totalLayout"
+        android:gravity="center"
+        android:layout_toEndOf="@+id/ammountLayout">
+
+        <TextView
+            android:id="@+id/totalLabel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Razem:"
+            android:textColor="@color/gray"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/total"
+            android:layout_below="@+id/totalLabel"
+            android:text="23.6 zł"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

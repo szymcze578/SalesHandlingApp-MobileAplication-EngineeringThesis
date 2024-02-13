@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PackageClients.CreateClientFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/startDateButton"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="30dp"
+            android:drawablePadding="3dp"
+            android:padding="5dp"
+            android:text="Wybierz date początkową:"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/startDateView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/startDateButton"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/layout_bg"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/endDateButton"
+            android:layout_width="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startDateView"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:drawablePadding="3dp"
+            android:padding="5dp"
+            android:text="Wybierz date końcową:"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/endDateView"
+            android:layout_width="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/endDateButton"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/layout_bg"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:maxLines="1"
+            android:inputType="text"/>
+
+
+        <Button
+            android:id="@+id/generateReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/endDateView"
+            android:layout_marginTop="25dp"
+            android:text="Generuj raport"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:backgroundTint="@android:color/holo_red_dark"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

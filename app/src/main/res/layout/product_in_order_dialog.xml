@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zamówienie"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productsInCart"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:id="@+id/summary"
+            android:background="@drawable/layout_bg"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/totalSum"
+                android:id="@+id/sumLabel"
+                android:text="Do zapłaty:"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalSum"
+                android:layout_alignParentRight="true"
+                android:text="65,29 zł"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_marginEnd="10dp"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/createOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Utwórz"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:layout_gravity="end"
+            android:layout_margin="20dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
